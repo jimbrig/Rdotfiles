@@ -1,2 +1,4 @@
 ^Rdotfiles\.Rproj$
 ^\.Rproj\.user$
+^\.github$
+^README\.Rmd$
