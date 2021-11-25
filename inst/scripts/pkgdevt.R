@@ -23,6 +23,19 @@ require(chameleon)
 usethis::create_package("Rdotfiles")
 usethis::use_description()
 usethis::use_roxygen_md()
+usethis::use_readme_rmd()
+
+knitr::knit("README.Rmd")
+
+
+# setup git-cliff ---------------------------------------------------------
+
+fs::file_create("cliff.toml")
+usethis::use_build_ignore("cliff.toml")
+system("git-cliff -i")
+file.edit("cliff.toml")
+system("git-cliff -o inst/CHANGELOG.md")
+
 
 # git and github ----------------------------------------------------------
 usethis::use_git()
