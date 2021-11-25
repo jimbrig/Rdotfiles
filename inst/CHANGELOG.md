@@ -14,10 +14,14 @@ All notable changes to this project will be documented in this file.
 ### Configuration
 
 - Initial skaffolding
+- Setup git-cliff and add config to buildignore
+- Continue pkgdevt.R scripting
 
 ### Documentation
 
 - Initialize README.Rmd and README.md
+- Add pkgdown site Github action
+- Initialize CHANGELOG.md
 
 ### Features
 
